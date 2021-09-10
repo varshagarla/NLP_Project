@@ -13,6 +13,8 @@ Varsha Garla
 ### Data Description:
 Data will be scraped from PubMed using the [metapub](https://pypi.org/project/metapub/) Python library. I aim to scrape 5,000 titles and abstracts (typically ~250 words or less) of research papers searched with the keywords "autism" or "children autism". I expect to extract a wide array of sub-topics under the umbrella of autism research such as genetic predisposition, behavioral therapy, sensory processing, neuroimaging, molecular biology, etc.
 
+Update: I am still trying to get this to work but if I am unable to scrape the abstracts by the end of the day today, I will use [this dataset](https://www.kaggle.com/sandhyaavasthi/abstractspubmed) from Kaggle that contains 10,000 abstracts of research articles from 2015 to 2019 with the search keywords "tobacco" and "alcohol".
+
 ### Tools:
 - Webscraping: PubMedFetcher module in metapub Python library
 - Data manipulation and cleaning: Pandas and Numpy
