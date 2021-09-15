@@ -20,3 +20,8 @@ I created baseline models using different combinations of algorithms (NMF, LSA, 
 
 
 ### Next Steps
+- **Number of Topics**: While the LSA + TF-IDF model yielded the most promising results, I am curious to see if increasing the number of topics will produce more coherent topics.
+- I will likely stick with the LSA model and try to improve it
+- **Bigrams**: As shown, many of the topics top terms have overlap of unigrams and bigrams (i.e. Topic 8 "substance" and "substance abuse", Topic 6 "mental health" and "mental". Since bigrams capture more meaning, I would like to experiment with only using bigrams to see how the topics and top terms change.
+- **Stemming**: I have only lemmatized the text. However, the topics may benefit from stemming, as shown in the initial results (i.e. Topic 1 "adolescence" and "adolescent", Topic 5 "drink" and "drinking")
+- **More custom stop words**: While I did some initial removal of custom stop words, I want to look at the vocabulary of the abstracts to see if I can remove any more fluff words that don't add meaning, since some are polluting the top terms of the topic results (i.e. suggest, determine, report, associate)
