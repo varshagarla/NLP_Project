@@ -1,5 +1,5 @@
 # Minimum Viable Product
-## Title
+## Recommending Scientific Journal Articles 📗 Using NLP on Paper Abstracts 📖
 
 ### Goal
 The goal of this project is to recommend scientific papers to a user based on the similarity of a search string or an abstract of a paper of interest.
