@@ -11,22 +11,17 @@ Reading scientific literature is a regular task for a researcher; however, there
 The dataset is from Kaggle and can be accessed [here](https://www.kaggle.com/sandhyaavasthi/abstractspubmed). The raw dataset contains 9,719 abstracts of research articles on PubMed from 2015 to 2019 with the search keywords "tobacco" and "alcohol".
 
 ## Algorithms
-_Cleaning_
-
+**Cleaning:**
 During exploratory data analysis, I discovered that some abstracts were unrelated to "tobacco" and "alcohol". I excluded abstracts that did not explicitly contain "tobacco" or "alcohol." After this, the dataset contained 726 abstracts.
 
-_Text Preprocessing_
-
+**Text Preprocessing:**
 Numbers and punctuation were removed from the text, which was then tokenized. After tagging the tokenized text with parts of speech, adverbs were removed and the remaining words were lemmatized.
 
-_Topic Modeling_
-
+**Topic Modeling:**
 Baseline models were created with different vectorizers (CountVectorizer & TF-IDF) and models (LSA, LDA, and NMF). The TF-IDF vectorizer and LSA model were eventually selected, with 9 topics, minimum document frequency of 0.01, maximum document frequency of 0.9, and custom stopwords combined with English stopwords.
 
-_Recommendation System_
-
+**Recommendation System:**
 The recommendation system was built using the cosine similarity between one abstract topic profile or user search string topic profile and the other abstract topic profiles.
-
 
 ## Tools
 - Numpy and Pandas for data manipulation
